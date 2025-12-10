@@ -1,0 +1,76 @@
+@startuml CasosDeUso
+!theme plain
+skinparam componentStyle rectangle
+
+left to right direction
+
+actor Paciente
+actor "Profissional\n de Saúde" as Profissional
+actor Administrador
+
+rectangle "SGHSS VIDA+" {
+    usecase UC01 as "Realizar Login"
+    usecase UC02 as "Cadastrar Conta"
+    usecase UC03 as "Recuperar Senha"
+    
+    usecase UC04 as "Visualizar Consultas"
+    usecase UC05 as "Visualizar Exames"
+    usecase UC06 as "Acessar Prontuário"
+    usecase UC07 as "Agendar Teleconsulta"
+    usecase UC08 as "Visualizar Receitas"
+    usecase UC09 as "Editar Perfil"
+    
+    usecase UC10 as "Gerenciar Agenda"
+    usecase UC11 as "Listar Pacientes"
+    usecase UC12 as "Atualizar Prontuário"
+    usecase UC13 as "Emitir Prescrição"
+    usecase UC14 as "Realizar Teleconsulta"
+    usecase UC15 as "Visualizar Relatórios"
+    
+    usecase UC16 as "Gerenciar Pacientes"
+    usecase UC17 as "Gerenciar Profissionais"
+    usecase UC18 as "Controlar Leitos"
+    usecase UC19 as "Gerenciar Internações"
+    usecase UC20 as "Gerenciar Suprimentos"
+    usecase UC21 as "Gerar Relatórios Financeiros"
+    usecase UC22 as "Gerar Relatórios Gerenciais"
+    usecase UC23 as "Visualizar Logs de Auditoria"
+    usecase UC24 as "Configurar Sistema"
+}
+
+' Relações Paciente
+Paciente --> UC01
+Paciente --> UC02
+Paciente --> UC03
+Paciente --> UC04
+Paciente --> UC05
+Paciente --> UC06
+Paciente --> UC07
+Paciente --> UC08
+Paciente --> UC09
+
+' Relações Profissional
+Profissional --> UC01
+Profissional --> UC02
+Profissional --> UC03
+Profissional --> UC10
+Profissional --> UC11
+Profissional --> UC12
+Profissional --> UC13
+Profissional --> UC14
+Profissional --> UC15
+
+' Relações Administrador
+Administrador --> UC01
+Administrador --> UC16
+Administrador --> UC17
+Administrador --> UC18
+Administrador --> UC19
+Administrador --> UC20
+Administrador --> UC21
+Administrador --> UC22
+Administrador --> UC23
+Administrador --> UC24
+
+@enduml
+
