@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Profissional | SGHSS Vida Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-text">
+                        <h2><span class="vida">VIDA+</span><span class="plus"></span></h2>
+                        <p class="logo-subtitle">GESTÃO HOSPITALAR</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#inicio" class="nav-item active" data-section="inicio">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span>
+                    <span>Início</span>
+                </a>
+                <a href="#agenda" class="nav-item" data-section="agenda">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
+                    <span>Minha Agenda</span>
+                </a>
+                <a href="#pacientes" class="nav-item" data-section="pacientes">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                    <span>Pacientes</span>
+                </a>
+                <a href="#prontuarios" class="nav-item" data-section="prontuarios">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></span>
+                    <span>Prontuários</span>
+                </a>
+                <a href="#prescricoes" class="nav-item" data-section="prescricoes">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span>
+                    <span>Prescrições</span>
+                </a>
+                <a href="#telemedicina" class="nav-item" data-section="telemedicina">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></span>
+                    <span>Telemedicina</span>
+                </a>
+                <a href="#relatorios" class="nav-item" data-section="relatorios">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></span>
+                    <span>Relatórios</span>
+                </a>
+                <a href="#perfil" class="nav-item" data-section="perfil">
+                    <span class="nav-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+                    <span>Meu Perfil</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> Sair</a>
+            </div>
+        </aside>
+        
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <h1>Dashboard do Profissional</h1>
+                    <div class="user-info">
+                        <span>Bem-vindo, <strong>Dr. Carlos Mendes</strong></span>
+                        <div class="notifications">
+                            <span class="notification-badge">5</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="dashboard-content">
+                <!-- Seção Início -->
+                <section id="inicio" class="dashboard-section active">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+                            <div class="stat-info">
+                                <h3>Consultas Hoje</h3>
+                                <p class="stat-value">8</p>
+                                <p class="stat-label">Agendadas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+                            <div class="stat-info">
+                                <h3>Próxima Consulta</h3>
+                                <p class="stat-value">14:00</p>
+                                <p class="stat-label">João Silva</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></div>
+                            <div class="stat-info">
+                                <h3>Prontuários Pendentes</h3>
+                                <p class="stat-value">3</p>
+                                <p class="stat-label">Aguardando atualização</p>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></div>
+                            <div class="stat-info">
+                                <h3>Prescrições Hoje</h3>
+                                <p class="stat-value">12</p>
+                                <p class="stat-label">Emitidas</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <h3>Agenda de Hoje</h3>
+                            <div class="schedule-list">
+                                <div class="schedule-item">
+                                    <div class="schedule-time">09:00</div>
+                                    <div class="schedule-content">
+                                        <strong>Maria Santos</strong>
+                                        <p>Consulta Cardiológica</p>
+                                    </div>
+                                    <span class="badge badge-success">Confirmada</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">10:00</div>
+                                    <div class="schedule-content">
+                                        <strong>Pedro Oliveira</strong>
+                                        <p>Consulta Cardiológica</p>
+                                    </div>
+                                    <span class="badge badge-success">Confirmada</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">14:00</div>
+                                    <div class="schedule-content">
+                                        <strong>João Silva</strong>
+                                        <p>Consulta Cardiológica</p>
+                                    </div>
+                                    <span class="badge badge-warning">Pendente</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-card">
+                            <h3>Notificações</h3>
+                            <div class="notification-item">
+                                <strong>Nova Solicitação de Exame</strong>
+                                <p>Paciente Maria Santos solicitou exame de sangue</p>
+                                <span class="notification-time">Há 30 minutos</span>
+                            </div>
+                            <div class="notification-item">
+                                <strong>Consulta Cancelada</strong>
+                                <p>Consulta de Pedro Costa foi cancelada</p>
+                                <span class="notification-time">Há 2 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Seção Agenda -->
+                <section id="agenda" class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Minha Agenda</h2>
+                        <button class="btn btn-primary">Nova Consulta</button>
+                    </div>
+                    
+                    <div class="calendar-view">
+                        <div class="calendar-header">
+                            <button class="btn-icon" title="Mês anterior"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                            <h3>Dezembro 2024</h3>
+                            <button class="btn-icon" title="Próximo mês"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                        </div>
+                        <div class="calendar-grid">
+                            <!-- Calendário seria implementado com JavaScript -->
+                            <p>Visualização de calendário com consultas agendadas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Data/Hora</th>
+                                    <th>Paciente</th>
+                                    <th>Tipo</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/12/2024 - 14:00</td>
+                                    <td>João Silva</td>
+                                    <td>Presencial</td>
+                                    <td><span class="badge badge-warning">Pendente</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Editar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/12/2024 - 10:00</td>
+                                    <td>Pedro Oliveira</td>
+                                    <td>Telemedicina</td>
+                                    <td><span class="badge badge-success">Confirmada</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Editar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/12/2024 - 11:00</td>
+                                    <td>Ana Costa</td>
+                                    <td>Presencial</td>
+                                    <td><span class="badge badge-success">Confirmada</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Editar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/12/2024 - 16:00</td>
+                                    <td>Roberto Santos</td>
+                                    <td>Presencial</td>
+                                    <td><span class="badge badge-warning">Pendente</span></td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Editar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <!-- Seção Pacientes -->
+                <section id="pacientes" class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Meus Pacientes</h2>
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar paciente...">
+                            <button class="btn-icon" title="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button>
+                        </div>
+                    </div>
+                    
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>CPF</th>
+                                    <th>Última Consulta</th>
+                                    <th>Próxima Consulta</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>João Silva</td>
+                                    <td>123.456.789-00</td>
+                                    <td>10/12/2024</td>
+                                    <td>15/12/2024</td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Prontuário"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maria Santos</td>
+                                    <td>987.654.321-00</td>
+                                    <td>12/12/2024</td>
+                                    <td>20/12/2024</td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Prontuário"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pedro Oliveira</td>
+                                    <td>456.789.123-00</td>
+                                    <td>14/12/2024</td>
+                                    <td>22/12/2024</td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Prontuário"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Costa</td>
+                                    <td>789.123.456-00</td>
+                                    <td>13/12/2024</td>
+                                    <td>18/12/2024</td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Prontuário"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Roberto Santos</td>
+                                    <td>321.654.987-00</td>
+                                    <td>11/12/2024</td>
+                                    <td>16/12/2024</td>
+                                    <td>
+                                        <button class="btn-icon" title="Visualizar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                                        <button class="btn-icon" title="Prontuário"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <!-- Seção Prontuários -->
+                <section id="prontuarios" class="dashboard-section">
+                    <h2>Prontuários Eletrônicos</h2>
+                    <div class="content-card">
+                        <div class="form-group">
+                            <label>Selecionar Paciente</label>
+                            <select>
+                                <option>João Silva - CPF: 123.456.789-00</option>
+                                <option>Maria Santos - CPF: 987.654.321-00</option>
+                            </select>
+                        </div>
+                        
+                        <div class="prontuario-form">
+                            <h3>Nova Entrada no Prontuário</h3>
+                            <div class="form-group">
+                                <label>Data da Consulta</label>
+                                <input type="datetime-local">
+                            </div>
+                            <div class="form-group">
+                                <label>Anamnese</label>
+                                <textarea rows="5" placeholder="Descreva a anamnese..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Diagnóstico</label>
+                                <input type="text" placeholder="CID-10 ou descrição">
+                            </div>
+                            <div class="form-group">
+                                <label>Conduta</label>
+                                <textarea rows="5" placeholder="Descreva a conduta..."></textarea>
+                            </div>
+                            <button class="btn btn-primary">Salvar Prontuário</button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Seção Prescrições -->
+                <section id="prescricoes" class="dashboard-section">
+                    <h2>Prescrições Digitais</h2>
+                    <div class="content-card">
+                        <h3>Nova Prescrição</h3>
+                        <form class="prescription-form">
+                            <div class="form-group">
+                                <label>Paciente</label>
+                                <select required>
+                                    <option>Selecione o paciente...</option>
+                                    <option>João Silva</option>
+                                    <option>Maria Santos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Medicamentos</label>
+                                <div class="medication-list">
+                                    <div class="medication-item">
+                                        <input type="text" placeholder="Nome do medicamento">
+                                        <input type="text" placeholder="Dosagem">
+                                        <input type="text" placeholder="Posologia">
+                                        <button type="button" class="btn-icon" title="Remover"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-sm">+ Adicionar Medicamento</button>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Emitir Receita Digital</button>
+                        </form>
+                    </div>
+                </section>
+                
+                <!-- Seção Telemedicina -->
+                <section id="telemedicina" class="dashboard-section">
+                    <h2>Telemedicina</h2>
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <h3>Consultas Online Agendadas</h3>
+                            <div class="list-item">
+                                <strong>20/12/2024 - 15:00</strong>
+                                <p>João Silva - Cardiologia</p>
+                                <button class="btn btn-sm">Iniciar Videochamada</button>
+                            </div>
+                        </div>
+                        <div class="content-card">
+                            <h3>Histórico de Teleconsultas</h3>
+                            <p>Registro de todas as consultas online realizadas</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Seção Relatórios -->
+                <section id="relatorios" class="dashboard-section">
+                    <h2>Relatórios</h2>
+                    <div class="content-card">
+                        <h3>Gerar Relatório</h3>
+                        <form class="report-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Período Inicial</label>
+                                    <input type="date">
+                                </div>
+                                <div class="form-group">
+                                    <label>Período Final</label>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Tipo de Relatório</label>
+                                <select>
+                                    <option>Consultas Realizadas</option>
+                                    <option>Prescrições Emitidas</option>
+                                    <option>Pacientes Atendidos</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gerar Relatório</button>
+                        </form>
+                    </div>
+                </section>
+                
+                <!-- Seção Perfil -->
+                <section id="perfil" class="dashboard-section">
+                    <h2>Meu Perfil Profissional</h2>
+                    <div class="content-card">
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nome Completo</label>
+                                    <input type="text" value="Dr. Carlos Mendes">
+                                </div>
+                                <div class="form-group">
+                                    <label>CRM</label>
+                                    <input type="text" value="CRM 123456">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Especialidade</label>
+                                <input type="text" value="Cardiologia">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>E-mail</label>
+                                    <input type="email" value="carlos.mendes@vidplus.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefone</label>
+                                    <input type="tel" value="(11) 98765-4321">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/icons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
